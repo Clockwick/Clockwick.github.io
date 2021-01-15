@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+}
+
+body {
+    padding: 5em;
+}
+
+title {
+    display: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container > * {
+    margin: 1rem 0;
+}
+
+.line {
+    color: white;
+    width: 50em;
+}
+a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+
+a:hover
+{
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    cursor: pointer;
+}
+
+.info-container {
+    background: gray;
+    position: absolute;
+    width: 40em;
+    height: 30em;
+    top: 30%;
+    left: 32.5%;
+
+    grid-template-columns: 50%;
+    padding-right: 50px;
+}
+
+.info-description {
+    background: transparent;
+    text-align: center;
+    grid-column-start: 1;
+    color: white;
+    word-wrap: break-word;
+    font-size: 2.5rem;
+    padding: 5em 0;
+}
+
+.info-image {
+    
+    background: url("assets/Profile_Img.png");
+    grid-column-start: 2;
+    background-repeat: no-repeat;
+    background-size: 20em;
+    background-position-y: 5em;
+    margin: 1em;
+
+}
